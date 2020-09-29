@@ -23,7 +23,7 @@ public class Bird : MonoBehaviour
             if (Input.GetMouseButtonDown (0)) 
             {
                 anim.SetTrigger("Flap");
-                rb2d.velocity = Vector2.zero;
+                rb2d.velocity = new Vector2(0, 5);
                 rb2d.AddForce(new Vector2(0, upForce));
             }
         }
